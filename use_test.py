@@ -1,12 +1,4 @@
 
-import test
-
-from test import test_func1 #Only import the function directly into current namespace
-
- #Exception (NameError)
-
-from test import *
-
 
 def megamain():
    
@@ -99,17 +91,18 @@ def megamain():
             w = w+1
 
             animals1.extend(animal_type1)
-            
 
-
-        continue1 = str(input('would you like to contiune? yes or quit '))
-        for letter in continue1:
+        searchname = input('search name, or quit')  
+        if searchname == name:
+            print(animals)
+            continue1 = input("would you like to Continue? or quit") 
+                        
+            for letter in continue1:
                 if letter in "n,N,q,Q":
                     quit("quittting")
             
         w = 0
             #import from another file
-
-
+             
         
 megamain()
