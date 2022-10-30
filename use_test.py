@@ -1,10 +1,9 @@
-
 def megamain():
-   
-
-    animals1 = []
+    animals = []
+    animals1 = [animals] 
+    animals2 = [animals1 ,animals]
     name = str
-    animals = [animals1]   
+      
     while True:
 
         class Pet:
@@ -34,7 +33,7 @@ def megamain():
 
         animal_type = input("input pet type")
         name = input("input pet name")
-        age = input("pet age")
+        age = (input("pet age") + ':')
 
         pet = Pet({'name': name, 'type': animal_type, 'age': age})
 
@@ -78,18 +77,20 @@ def megamain():
                 def get_cost(self1):
                     return self1._cost1        
 
-            animal_type1 = input("input pet type")
-            name1 = input("input pet name")
-            age1 = input("pet age")
-            cost1 = input("cost")
+            animal_type1 = input ('type' + ("input pet type"))
+            name1 = input("input pet name") + '2'
+            age1 = input("pet age") + '5'
+            cost1 = input("cost") + '9'
 
-            yes = Yes({'name': name1, 'type': animal_type1, 'age': age1 })
+            yes = Yes({'name': (name1 + '32'), 'type': animal_type1, 'age': age1 })
 
             print(w)
             print(a)
             w = w+1
 
             animals1.extend(animal_type1)
+            animals1.extend(name1)
+            animals1.extend(age1)
 
         searchname = input('search name, or quit')  
         if searchname == name:
@@ -104,9 +105,9 @@ def megamain():
             
             
         w = 0
-        animals1
+        animals2
         with open('readme.txt', 'w') as f:
                 for line in animals1:
-                    f.write(line)
-                    f.write('\n')       
+                    f.writelines(line)
+                         
 megamain()
