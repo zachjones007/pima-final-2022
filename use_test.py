@@ -1,5 +1,4 @@
 
-
 def megamain():
    
 
@@ -100,9 +99,14 @@ def megamain():
             for letter in continue1:
                 if letter in "n,N,q,Q":
                     quit("quittting")
+                     #import from another file
+        
+            
             
         w = 0
-            #import from another file
-             
-        
+        animals1
+        with open('readme.txt', 'w') as f:
+                for line in animals1:
+                    f.write(line)
+                    f.write('\n')       
 megamain()
