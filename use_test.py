@@ -5,9 +5,10 @@ from stan import Yes
 def megamain():
     animals = []
     animals1 = [animals] 
-    animals2 = [animals1 ,animals]
+    animasl2 = animals1
+
     name = str
-      
+    name1 = input("input pet name")
     while True:
 
         
@@ -24,12 +25,12 @@ def megamain():
         w = 0
         r = 0
 
-        while w<3:
+        while w<1:
                                             
                    
 
             animal_type1 = input ('type' )
-            name1 = input("input pet name") 
+             
             age1 = input("pet age") 
             cost1 = input("cost")
 
@@ -51,14 +52,16 @@ def megamain():
        
                          
         w = 0
-        animals2
-        with open('readme.txt', 'w') as f:
-                    f.write(str(animals1))
-                    f.writelines("/  \n".format(animals1))
-            
+
+        animasl2
+        with open('readme.txt', 'a') as f:
+                    f.write(str(animals1 ))
+                    f.writelines("/  \n".format(animals1 ))
+        animals1 .clear()
     for letter in continue1:
         if letter in "n,N,q,Q":
                     quit("quittting")
-                     #import from another file
-                         
+
+
+                     
 megamain()
