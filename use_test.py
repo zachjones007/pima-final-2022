@@ -1,4 +1,4 @@
-from man import Pet
+from test import Pet
 from stan import Yes
 
 def megamain():

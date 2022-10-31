@@ -29,3 +29,6 @@ class Yes:
 
                 def get_cost(self1):
                     return self1._cost1 
+
+                
+                
