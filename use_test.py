@@ -47,16 +47,17 @@ def megamain():
         searchname = input('search name, or quit')  
         if searchname == name:
             print(animals)
-            continue1 = input("would you like to Continue? or quit") 
+            continue1 = input("would you like to Continue? or quit")
+       
                          
         w = 0
         animals2
         with open('readme.txt', 'w') as f:
                     f.write(str(animals1))
-                    f.writelines("/ {} /n".format(animals1))
+                    f.writelines("/  \n".format(animals1))
             
-        for letter in continue1:
-                if letter in "n,N,q,Q":
+    for letter in continue1:
+        if letter in "n,N,q,Q":
                     quit("quittting")
                      #import from another file
                          
