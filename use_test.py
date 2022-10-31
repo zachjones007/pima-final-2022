@@ -1,3 +1,4 @@
+from datetime import date
 from test import Pet
 from stan import Yes
 
@@ -27,10 +28,10 @@ def megamain():
                                             
                    
 
-            animal_type1 = input ('type' + ("input pet type"))
-            name1 = input("input pet name") + '2'
-            age1 = input("pet age") + '5'
-            cost1 = input("cost") + '9'
+            animal_type1 = input ('type' )
+            name1 = input("input pet name") 
+            age1 = input("pet age") 
+            cost1 = input("cost")
 
             yes = Yes({'name': (name1 + '32'), 'type': animal_type1, 'age': age1 })
 
@@ -41,6 +42,7 @@ def megamain():
             animals1.extend(animal_type1)
             animals1.extend(name1)
             animals1.extend(age1)
+            animals1.extend(cost1)
         
         searchname = input('search name, or quit')  
         if searchname == name:
@@ -49,9 +51,11 @@ def megamain():
                          
         w = 0
         animals2
-        with open('readme.txt', 'w') as f:
-                for line in animals1:
-                    f.writelines(line)
+    
+        file = open ("readme.txt", "a")
+        file.write ("Place Sex Year Forename Count\n")
+        file.write ("{} / {} / {} / {} \n".format(name1, age1, cost1, animal_type1))
+        file.close()            
             
         for letter in continue1:
                 if letter in "n,N,q,Q":
@@ -59,3 +63,4 @@ def megamain():
                      #import from another file
                          
 megamain()
+
