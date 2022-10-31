@@ -51,11 +51,9 @@ def megamain():
                          
         w = 0
         animals2
-    
-        file = open ("readme.txt", "a")
-        file.write ("Place Sex Year Forename Count\n")
-        file.write ("{} / {} / {} / {} \n".format(name1, age1, cost1, animal_type1))
-        file.close()            
+        with open('readme.txt', 'w') as f:
+                    f.write(str(animals1))
+                    f.writelines("/ {} /n".format(animals1))
             
         for letter in continue1:
                 if letter in "n,N,q,Q":
@@ -63,4 +61,3 @@ def megamain():
                      #import from another file
                          
 megamain()
-
