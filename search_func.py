@@ -1,4 +1,4 @@
-
+# need this only to expect name
 def search_str(file_path, word):
     with open(file_path, 'r') as file:
         # read all content of a file
