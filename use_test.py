@@ -1,6 +1,7 @@
 from datetime import date
 from test import Pet
 from stan import Yes
+from search_func import search_func
 def megamain():
     animals = []
     animals1 = [animals] 
@@ -34,21 +35,26 @@ def megamain():
             animals1.extend(age1)
             animals1.extend(cost1)
         
-        searchname = input('search name, or quit')  
-        if searchname == name:
-            print(animals)
-            continue1 = input("would you like to Continue? or quit") 
-            
+
+       
 
         w = 0
-        animals2
-        with open('readme.txt', 'a') as f:
-                    f.write(str(animals1))
-                    f.writelines("/  \n".format(animals1))
-
+        
+       
+            
+        continue1 = input("would you like to Continue? or quit") 
         for letter in continue1:
                 if letter in "n,N,q,Q":
                     quit("quittting")
                      #import from another file
+                elif letter in "y,Y":
+                    continue
+
+                animals2
+        with open('readme.txt', 'a') as f:
+                    f.write(str(animals))
+                    f.writelines("/  \n".format(animals))
+                    animals1.clear()
+                    animals.clear()
 
 megamain()
