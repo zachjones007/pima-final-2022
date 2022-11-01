@@ -1,4 +1,5 @@
 # need this only to expect name
+from use_test import megamain
 def search_str(file_path, word):
     with open(file_path, 'r') as file:
         # read all content of a file
@@ -20,3 +21,9 @@ def search_str(file_path, word):
        
 
 search_str('readme.txt', input('Enter a string to search: '))
+def new_func():
+    return megamain()
+
+new_func()
+
+
