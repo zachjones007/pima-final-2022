@@ -27,7 +27,7 @@ def megamain():
             name1 = input("input pet name") 
             age1 = input("pet age") 
             cost1 = input("cost")
-            yes = Yes({'name': (name1 + '32'), 'type': animal_type1, 'age': age1 })
+            yes = Yes({'procedure name': (name1 ), 'cost': animal_type1, 'date': age1 })
             print(w)
             print(a)
             w = w+1
@@ -50,7 +50,8 @@ def megamain():
     
         
     
-        print("general patient info", pet.get_name())   
+        print("general patient info", pet.get_name())
+        print(" patient info", yes.get_name())    
         continue1 = input("would you like to Continue? or quit") 
         for letter in continue1:
             if letter in "n,N,q,Q":
