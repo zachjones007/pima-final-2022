@@ -7,8 +7,9 @@ def megamain():
     animals1 = [animals] 
     animals2 = [animals1 ,animals]
     name = str
-    t = 0 
-    while t < 1:
+
+    t = 0
+    while  t<1 :
         
     
         name = input("input pet name")
@@ -39,24 +40,26 @@ def megamain():
     
 
         w = 0
-        
-    
-        print("general patient info", pet.get_name())   
-        continue1 = input("would you like to Continue? or quit") 
-        for letter in continue1:
-            if letter in "n,N,q,Q":
-                t = t+1
-                break
-            else:
-                continue
 
-            animals2
+        animals2
         with open('readme.txt', 'a') as f:
                     f.write(str(animals1))
                     f.writelines("/  \n".format(animals))
                     animals1.clear()
                     animals.clear()
     
+        
+    
+        print("general patient info", pet.get_name())   
+        continue1 = input("would you like to Continue? or quit") 
+        for letter in continue1:
+            if letter in "n,N,q,Q":
+                t = t +1
+                
+                
+           
+
+            
     
     
         

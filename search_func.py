@@ -1,6 +1,7 @@
 # need this only to expect name
 from use_test import megamain
 def __init__():
+
     def search_str(file_path, word):
         with open(file_path, 'r') as file:
             # read all content of a file
@@ -10,14 +11,19 @@ def __init__():
                 print('string exist in a file')
                 with open('readme.txt', 'r') as fp:
 
-                   lines = fp.readlines()
-                   for line in lines:
-                      if line.find(word) != -1:
-                         print(word, 'string exists in file')
-                         print('Line Number:', lines.index(line))
-                         print('Line:', line)
+                    lines = fp.readlines()
+                    for line in lines:
+                        if line.find(word) != -1:
+                            print(word, 'string exists in file')
+                            print('Line Number:', lines.index(line))
+                            print('Line:', line)
+                            quit()
+                            
+                            
             else:
                 print('string does not exist in a file')
+                quit()
+                
 
 
 
@@ -26,6 +32,5 @@ def __init__():
         return megamain()
 
     new_func()
+
 __init__()
-
-
