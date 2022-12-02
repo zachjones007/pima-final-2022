@@ -1,17 +1,18 @@
 
+
 class Pet:
-            
-            def __init__(self, options):
-                self._name = options
+    def __init__(self, age = 0,name= " "):
+         self._name = name
+         self._age = age
+    
 
-            def set_name(self, new_name):
-                self._name = new_name
+    def set_age(self, vet):
+        self._age = vet
+    
+    
+    def set_name(self, vet):
+        self._name = vet
 
-            def get_name(self):
-                return self._name
-
-            def get_animal_type(self):
-                return self._animal_type
-
-            def get_age(self):
-                return self._age
+    
+  
+p = Pet()

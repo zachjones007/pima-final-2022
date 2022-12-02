@@ -1,7 +1,7 @@
-from test import Pet
+from test import p
 from stan import Yes
 
-
+global animals, animals1 , animals2
 def megamain():
     animals = []
     animals1 = [animals] 
@@ -11,11 +11,25 @@ def megamain():
     t = 0
     while  t<1 :
         
-    
-        name = input("input pet name")
-        age = (input("pet age") + ':')
-        pet = Pet({'name': name, 'age': age})
+        
 
+        p.set_age(float(input("Enter the age: ")))
+        p.set_name(input("Enter the name: "))
+        @property
+        def get_age(self):
+            return self._age + animals2
+      
+   
+        @property
+        def get_name(self):
+            return self._name + animals2
+
+        
+        
+            
+
+        
+        
 
         a = []
         w = 0
@@ -23,19 +37,18 @@ def megamain():
         while w<1:
                                             
                 
-            animal_type1 = input ('type' )
-            name1 = input("input pet name") 
-            age1 = input("pet age") 
+            animal_type1 = input ('surgey type' )
+            name1 = input("input surgeon name") 
+            age1 = input("procedure date") 
             cost1 = input("cost")
-            yes = Yes({'procedure name': (name1 ), 'cost': animal_type1, 'date': age1 })
+            y = Yes({'procedure name': (name1 ), 'cost': animal_type1, 'date': age1 })
             print(w)
             print(a)
             w = w+1
-            animals1.extend(animal_type1)
-            animals1.extend(name1)
-            animals1.extend(age1)
-            animals1.extend(cost1)
-        
+            # setter shoud
+           
+            animals.extend(cost1 + age1 + name1 + animal_type1)
+            
 
     
 
@@ -50,8 +63,8 @@ def megamain():
     
         
     
-        print("general patient info", pet.get_name())
-        print(" patient info", yes.get_name())    
+       # print("the pets age is: ",p.get_age())
+        print("the pets name is: ",y.get_name())    
         continue1 = input("would you like to Continue? or quit") 
         for letter in continue1:
             if letter in "n,N,q,Q":
