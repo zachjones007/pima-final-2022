@@ -1,9 +1,14 @@
 global globalList, globalList1
 globalList = []
-globalList = globalList1
+globalList1 = [globalList]
+b =2 
+c = 3
+a = [b,c] 
+
+d = 4
 class MyList():
     def __init__(self):
-        self._myList = [1, 2, 3]
+        self._myList = [a]
 
     @property
     def myList(self):
