@@ -1,5 +1,5 @@
 # need this only to expect name
-from use_test import megamain
+from docsearch import list
 def __init__():
 
     def search_str(file_path, word):
@@ -29,7 +29,7 @@ def __init__():
 
     search_str('readme.txt', input('Enter a string to search: '))
     def new_func():
-        return megamain()
+        return list()
 
     new_func()
 
